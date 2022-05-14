@@ -1,0 +1,9 @@
+{
+  "code": "PI5002",
+  "message": "Failed getting response, try in some time",
+  "details": {
+    "message": "Unauthorized",
+    "status": "UNAUTHORIZED"
+  },
+  "debugId": "83191ac9-cbbf-46eb-b500-6b841b476c2d"
+}

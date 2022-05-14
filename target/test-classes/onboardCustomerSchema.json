@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "lcmStatus",
+    "extendedReply",
+    "externalReferenceNo",
+    "requestId"
+  ],
+  "properties": {
+    "lcmStatus": {
+      "type": "object",
+      "default": {},
+      "title": "The lcmStatus Schema",
+      "required": [
+        "replyText",
+        "replyCode",
+        "errorCode",
+        "internalReferenceNumber",
+        "externalReferenceNo",
+        "date"
+      ],
+      "properties": {
+        "replyText": {
+          "type": "string",
+          "default": "",
+          "title": "The replyText Schema",
+          "examples": [
+            "Card already onboarded"
+          ]
+        },
+        "replyCode": {
+          "type": "integer",
+          "default": 0,
+          "title": "The replyCode Schema",
+          "examples": [
+            99
+          ]
+        },
+        "errorCode": {
+          "type": "string",
+          "default": "",
+          "title": "The errorCode Schema",
+          "examples": [
+            "LCM_106"
+          ]
+        },
+        "internalReferenceNumber": {
+          "type": "string",
+          "default": "",
+          "title": "The internalReferenceNumber Schema",
+          "examples": [
+            "2022129102137858"
+          ]
+        },
+        "externalReferenceNo": {
+          "type": "string",
+          "default": "",
+          "title": "The externalReferenceNo Schema",
+          "examples": [
+            "Zeta12922073915191991152931"
+          ]
+        },
+        "date": {
+          "type": "string",
+          "default": "",
+          "title": "The date Schema",
+          "examples": [
+            "20220509000000"
+          ]
+        }
+      },
+      "examples": [{
+        "replyText": "Card already onboarded",
+        "replyCode": 99,
+        "errorCode": "LCM_106",
+        "internalReferenceNumber": "2022129102137858",
+        "externalReferenceNo": "Zeta12922073915191991152931",
+        "date": "20220509000000"
+      }]
+    },
+    "extendedReply": {
+      "type": "object",
+      "default": {},
+      "title": "The extendedReply Schema",
+      "required": [],
+      "properties": {},
+      "examples": [{}]
+    },
+    "externalReferenceNo": {
+      "type": "string",
+      "default": "",
+      "title": "The externalReferenceNo Schema",
+      "examples": [
+        "Zeta12922073915191991152931"
+      ]
+    },
+    "requestId": {
+      "type": "string",
+      "default": "",
+      "title": "The requestId Schema",
+      "examples": [
+        ""
+      ]
+    }
+  },
+  "examples": [{
+    "lcmStatus": {
+      "replyText": "Card already onboarded",
+      "replyCode": 99,
+      "errorCode": "LCM_106",
+      "internalReferenceNumber": "2022129102137858",
+      "externalReferenceNo": "Zeta12922073915191991152931",
+      "date": "20220509000000"
+    },
+    "extendedReply": {},
+    "externalReferenceNo": "Zeta12922073915191991152931",
+    "requestId": ""
+  }]
+}
